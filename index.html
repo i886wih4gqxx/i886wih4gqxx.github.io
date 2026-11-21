@@ -1,0 +1,1500 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>老虎菜吃瓜黑料不打烊 - 热点影像社区,原创爆料内容生态</title>
+<meta name="description" content="老虎菜吃瓜黑料不打烊官方网站，聚焦热点事件的原创影像社区，聚合创作者爆料、深度解读与话题追踪，持续输出高品质视频内容。">
+<meta name="keywords" content="老虎菜吃瓜黑料不打烊,热点影像,原创内容,创作者社区,品牌官网">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c0392b'/%3E%3Cpath d='M20 18h24v8H20zM20 30h24v8H20zM20 42h16v8H20z' fill='%23ffe6a7'/%3E%3C/svg%3E">
+<style>
+:root{
+  --tl-bg:#12100f;
+  --tl-panel:#1c1918;
+  --tl-panel2:#252120;
+  --tl-line:#332d2b;
+  --tl-red:#e0483a;
+  --tl-red-soft:#ff6a5a;
+  --tl-gold:#ffcc66;
+  --tl-text:#efe9e4;
+  --tl-muted:#a79e98;
+  --tl-radius:14px;
+  --tl-shadow:0 12px 34px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  background:var(--tl-bg);
+  color:var(--tl-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.tl-sticky-wrap{position:sticky;top:0;z-index:120}
+.tl-notice{
+  background:linear-gradient(90deg,#b5322a,#e0483a 55%,#8f2620);
+  color:#fff4e8;
+  font-size:13.5px;
+  letter-spacing:.2px;
+}
+.tl-notice-inner{
+  max-width:1200px;margin:0 auto;padding:9px 20px;
+  display:flex;align-items:center;gap:12px;
+  overflow:hidden;white-space:nowrap;
+}
+.tl-notice-tag{
+  flex:0 0 auto;background:#2a0f0c;color:#ffd9a0;border-radius:4px;
+  padding:1px 8px;font-size:12px;font-weight:700;letter-spacing:1px;
+}
+.tl-notice-text{overflow:hidden;text-overflow:ellipsis;flex:1 1 auto}
+.tl-notice-close{flex:0 0 auto;font-size:16px;opacity:.8;padding:0 4px}
+.tl-notice-close:hover{opacity:1}
+
+.tl-header{
+  background:rgba(18,16,15,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--tl-line);
+}
+.tl-header-inner{
+  max-width:1200px;margin:0 auto;padding:0 20px;
+  height:66px;display:flex;align-items:center;gap:22px;
+}
+.tl-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.tl-logo-mark{
+  width:38px;height:38px;border-radius:10px;
+  background:linear-gradient(140deg,#e0483a,#8f2620);
+  display:grid;place-items:center;font-weight:800;color:#ffe6a7;font-size:16px;
+  box-shadow:0 4px 14px rgba(224,72,58,.35);
+}
+.tl-logo-txt strong{display:block;font-size:16px;letter-spacing:.5px;line-height:1.2}
+.tl-logo-txt span{font-size:11px;color:var(--tl-muted);letter-spacing:2px}
+
+.tl-nav{display:flex;align-items:center;gap:4px;flex:1 1 auto;flex-wrap:wrap}
+.tl-nav a{
+  font-size:14px;color:#d6cec8;padding:8px 11px;border-radius:8px;
+  transition:.2s;white-space:nowrap;
+}
+.tl-nav a:hover,.tl-nav a.is-active{color:#fff;background:rgba(224,72,58,.18)}
+.tl-header-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.tl-search-mini{
+  display:flex;align-items:center;background:var(--tl-panel);
+  border:1px solid var(--tl-line);border-radius:999px;padding:5px 6px 5px 12px;
+}
+.tl-search-mini input{
+  background:none;border:none;outline:none;color:var(--tl-text);
+  width:132px;font-size:13px;
+}
+.tl-search-mini button{
+  width:28px;height:28px;border-radius:50%;background:var(--tl-red);
+  display:grid;place-items:center;font-size:13px;color:#fff;
+}
+.tl-burger{display:none;width:40px;height:40px;border-radius:10px;background:var(--tl-panel);border:1px solid var(--tl-line);align-items:center;justify-content:center;flex-direction:column;gap:4px}
+.tl-burger span{display:block;width:18px;height:2px;background:#e6ded8;border-radius:2px}
+
+.tl-mobile-nav{display:none;border-top:1px solid var(--tl-line);background:#171413}
+.tl-mobile-nav.is-open{display:block}
+.tl-mobile-nav a{display:block;padding:12px 22px;font-size:14px;border-bottom:1px solid #221e1d}
+.tl-mobile-nav .tl-search-mini{margin:14px 22px;width:auto}
+.tl-mobile-nav .tl-search-mini input{width:100%}
+
+/* ---------- 通用容器 ---------- */
+.tl-wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.tl-section{padding:64px 0}
+.tl-section-alt{background:#161312;border-top:1px solid var(--tl-line);border-bottom:1px solid var(--tl-line)}
+.tl-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:32px}
+.tl-sec-title{font-size:26px;font-weight:800;letter-spacing:.5px;position:relative;padding-left:16px;line-height:1.35}
+.tl-sec-title::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:4px;
+  background:linear-gradient(180deg,#ffcc66,#e0483a);
+}
+.tl-sec-sub{font-size:14px;color:var(--tl-muted);margin-top:8px;padding-left:16px;max-width:660px}
+.tl-sec-more{font-size:13.5px;color:var(--tl-gold);border:1px solid rgba(255,204,102,.35);padding:7px 16px;border-radius:999px;transition:.2s}
+.tl-sec-more:hover{background:rgba(255,204,102,.12)}
+
+.tl-btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+  padding:11px 24px;font-size:14.5px;font-weight:600;transition:.2s;
+  border:1px solid transparent;
+}
+.tl-btn-primary{background:linear-gradient(120deg,#e0483a,#b5322a);color:#fff;box-shadow:0 8px 22px rgba(224,72,58,.32)}
+.tl-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(224,72,58,.42)}
+.tl-btn-ghost{border-color:#4a4240;color:#e6ded8}
+.tl-btn-ghost:hover{border-color:var(--tl-gold);color:var(--tl-gold)}
+
+.tl-cover{position:relative;border-radius:var(--tl-radius);overflow:hidden;background:#221e1d}
+.tl-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.tl-cover:hover img{transform:scale(1.04)}
+.tl-cover-ratio{aspect-ratio:16/9}
+.tl-play{
+  position:absolute;right:12px;bottom:12px;width:36px;height:36px;border-radius:50%;
+  background:rgba(224,72,58,.92);display:grid;place-items:center;color:#fff;font-size:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.4);
+}
+.tl-cover-tag{
+  position:absolute;left:12px;top:12px;background:rgba(18,16,15,.78);
+  border:1px solid rgba(255,204,102,.4);color:var(--tl-gold);
+  font-size:11.5px;padding:3px 10px;border-radius:999px;letter-spacing:.5px;
+}
+.tl-cover-shade{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(10,8,8,.72) 100%);
+  pointer-events:none;
+}
+.tl-cover-duration{
+  position:absolute;right:12px;top:12px;font-size:11.5px;background:rgba(18,16,15,.8);
+  padding:2px 8px;border-radius:5px;color:#e6ded8;
+}
+
+/* ---------- 首屏 ---------- */
+.tl-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 12%,rgba(224,72,58,.22),transparent 52%),
+    radial-gradient(circle at 8% 88%,rgba(255,204,102,.14),transparent 48%),
+    #141110;
+  border-bottom:1px solid var(--tl-line);
+}
+.tl-hero-inner{
+  max-width:1200px;margin:0 auto;padding:66px 20px 58px;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;
+}
+.tl-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--tl-gold);
+  border:1px solid rgba(255,204,102,.35);border-radius:999px;padding:5px 14px;
+  letter-spacing:1px;margin-bottom:20px;background:rgba(255,204,102,.06);
+}
+.tl-hero h1{
+  font-size:clamp(30px,4.4vw,48px);line-height:1.24;letter-spacing:1px;font-weight:900;
+  background:linear-gradient(100deg,#fff 20%,#ffcc66 62%,#ff7a6a 92%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:16px;
+}
+.tl-hero-slogan{font-size:17px;color:#ffd9a0;letter-spacing:1px;margin-bottom:20px;font-weight:600}
+.tl-hero-desc{font-size:14.8px;color:#c9c0ba;max-width:560px;margin-bottom:26px}
+.tl-hero-stats{display:flex;gap:30px;flex-wrap:wrap;margin-bottom:30px}
+.tl-hero-stat strong{display:block;font-size:26px;color:#fff;font-weight:800;letter-spacing:.5px}
+.tl-hero-stat strong em{font-style:normal;font-size:14px;color:var(--tl-gold);margin-left:2px}
+.tl-hero-stat span{font-size:12.5px;color:var(--tl-muted)}
+.tl-hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.tl-hero-visual{position:relative}
+.tl-hero-main-cover{border-radius:18px;overflow:hidden;box-shadow:var(--tl-shadow);border:1px solid #332b29}
+.tl-hero-float{
+  position:absolute;left:-14px;bottom:-18px;background:#1f1b1a;border:1px solid #3a3230;
+  border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:12px;
+  box-shadow:0 10px 28px rgba(0,0,0,.5);max-width:290px;
+}
+.tl-hero-float .tl-dot{width:9px;height:9px;border-radius:50%;background:#4be07f;box-shadow:0 0 0 4px rgba(75,224,127,.16);flex:0 0 auto}
+.tl-hero-float p{font-size:12.5px;color:#d6cec8;line-height:1.5}
+.tl-hero-float b{color:#fff}
+
+/* ---------- 视频卡片 ---------- */
+.tl-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tl-grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.tl-vcard{background:var(--tl-panel);border:1px solid var(--tl-line);border-radius:var(--tl-radius);overflow:hidden;transition:.25s;display:flex;flex-direction:column}
+.tl-vcard:hover{transform:translateY(-4px);border-color:rgba(224,72,58,.5);box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.tl-vcard-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
+.tl-vcard-body h3{font-size:16px;line-height:1.5;font-weight:700}
+.tl-vcard-body h3 a:hover{color:var(--tl-gold)}
+.tl-vcard-desc{font-size:13px;color:var(--tl-muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tl-meta{display:flex;align-items:center;gap:8px;font-size:12px;color:#948b85;flex-wrap:wrap}
+.tl-avatar{
+  width:22px;height:22px;border-radius:50%;display:grid;place-items:center;
+  font-size:11px;font-weight:700;color:#fff;flex:0 0 auto;
+}
+.tl-card-ops{
+  display:flex;align-items:center;gap:16px;padding-top:10px;margin-top:auto;
+  border-top:1px dashed #2e2927;font-size:12.5px;color:#9c938d;
+}
+.tl-op{display:inline-flex;align-items:center;gap:5px;transition:.2s}
+.tl-op:hover{color:var(--tl-gold)}
+.tl-op.is-on{color:var(--tl-red-soft)}
+.tl-vcard-featured{grid-column:span 2}
+.tl-vcard-featured .tl-vcard-body h3{font-size:19px}
+
+/* ---------- 焦点 2+4 ---------- */
+.tl-focus-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px}
+.tl-focus-side{display:grid;grid-template-rows:repeat(2,1fr);gap:24px}
+.tl-focus-side .tl-vcard{flex-direction:row}
+.tl-focus-side .tl-cover{width:44%;aspect-ratio:auto;min-height:100%;border-radius:0}
+.tl-focus-side .tl-vcard-body{padding:14px 16px}
+
+/* ---------- 创作者 ---------- */
+.tl-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.tl-creator{
+  background:var(--tl-panel);border:1px solid var(--tl-line);border-radius:var(--tl-radius);
+  padding:22px 18px;text-align:center;transition:.25s;
+}
+.tl-creator:hover{border-color:rgba(255,204,102,.45);transform:translateY(-4px)}
+.tl-creator-ava{
+  width:66px;height:66px;border-radius:50%;margin:0 auto 12px;
+  display:grid;place-items:center;font-size:22px;font-weight:800;color:#fff;
+  box-shadow:0 6px 18px rgba(0,0,0,.4);
+}
+.tl-creator h3{font-size:15.5px;margin-bottom:4px}
+.tl-creator .tl-cat{font-size:12px;color:var(--tl-gold);margin-bottom:10px;letter-spacing:.5px}
+.tl-creator p{font-size:12.5px;color:var(--tl-muted);line-height:1.65;margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tl-creator-dat{display:flex;justify-content:center;gap:14px;font-size:11.5px;color:#8f8681;padding-top:10px;border-top:1px dashed #2e2927}
+.tl-creator-dat b{color:#e6ded8;font-size:13px}
+.tl-creator-btn{
+  margin-top:14px;width:100%;border:1px solid #3d3533;border-radius:999px;
+  padding:7px;font-size:12.5px;color:#d6cec8;transition:.2s;
+}
+.tl-creator-btn:hover{border-color:var(--tl-red);color:var(--tl-red-soft);background:rgba(224,72,58,.08)}
+
+/* ---------- 专题 ---------- */
+.tl-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tl-topic{
+  position:relative;border-radius:var(--tl-radius);overflow:hidden;border:1px solid var(--tl-line);
+  background:var(--tl-panel);display:flex;flex-direction:column;
+}
+.tl-topic .tl-cover{border-radius:0}
+.tl-topic-body{padding:18px 18px 20px;flex:1;display:flex;flex-direction:column;gap:8px}
+.tl-topic-body h3{font-size:16.5px;font-weight:700}
+.tl-topic-body p{font-size:13px;color:var(--tl-muted);flex:1}
+.tl-topic-status{
+  display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:#ffb3a8;
+  background:rgba(224,72,58,.14);border:1px solid rgba(224,72,58,.35);
+  padding:3px 10px;border-radius:999px;align-self:flex-start;
+}
+
+/* ---------- 深度解析 ---------- */
+.tl-about{
+  background:
+    linear-gradient(180deg,#151212,#1a1615);
+  border-top:1px solid var(--tl-line);
+  border-bottom:1px solid var(--tl-line);
+}
+.tl-about-inner{display:grid;grid-template-columns:.42fr .58fr;gap:44px;align-items:start}
+.tl-about-side{position:sticky;top:150px}
+.tl-about-side h2{font-size:26px;line-height:1.4;margin-bottom:14px}
+.tl-about-side h2 span{color:var(--tl-gold)}
+.tl-about-side p{font-size:13.5px;color:var(--tl-muted);margin-bottom:18px}
+.tl-about-badges{display:flex;flex-wrap:wrap;gap:8px}
+.tl-about-badges span{
+  font-size:12px;border:1px solid #3b3331;border-radius:999px;padding:4px 12px;color:#c9c0ba;
+}
+.tl-about-badges span:hover{border-color:var(--tl-gold);color:var(--tl-gold)}
+.tl-about-text{font-size:14.6px;color:#c4bbb5;line-height:2}
+.tl-about-text p{margin-bottom:18px}
+.tl-about-text h3{font-size:17px;color:#fff;margin:26px 0 10px;padding-left:12px;border-left:3px solid var(--tl-red)}
+.tl-about-quote{
+  background:#1f1a19;border:1px solid #362e2c;border-left:4px solid var(--tl-gold);
+  border-radius:10px;padding:16px 20px;font-size:13.8px;color:#d6cec8;margin:22px 0;
+}
+
+/* ---------- 影像墙 ---------- */
+.tl-wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:96px;gap:14px}
+.tl-wall-item{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--tl-line);background:var(--tl-panel)}
+.tl-wall-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.tl-wall-item:hover img{transform:scale(1.06)}
+.tl-wall-item .tl-wall-cap{
+  position:absolute;left:0;right:0;bottom:0;padding:22px 10px 8px;
+  font-size:11.5px;color:#fff;background:linear-gradient(180deg,transparent,rgba(10,8,8,.88));
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.tl-w-lg{grid-column:span 3;grid-row:span 2}
+.tl-w-md{grid-column:span 2;grid-row:span 2}
+.tl-w-sm{grid-column:span 2}
+
+/* ---------- 评价 ---------- */
+.tl-rate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tl-rate{
+  background:var(--tl-panel);border:1px solid var(--tl-line);border-radius:var(--tl-radius);
+  padding:20px;display:flex;flex-direction:column;gap:12px;position:relative;
+}
+.tl-rate::after{
+  content:"";position:absolute;right:16px;top:14px;width:26px;height:26px;border-radius:8px;
+  background:rgba(224,72,58,.14);
+}
+.tl-rate-stars{color:var(--tl-gold);font-size:13px;letter-spacing:2px}
+.tl-rate p{font-size:13.5px;color:#c9c0ba;flex:1}
+.tl-rate-who{display:flex;align-items:center;gap:10px;font-size:12.5px;color:#9c938d;border-top:1px dashed #2e2927;padding-top:12px}
+.tl-rate-who b{color:#e6ded8;font-weight:600}
+
+/* ---------- 榜单 ---------- */
+.tl-rank{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.tl-rank-box{background:var(--tl-panel);border:1px solid var(--tl-line);border-radius:var(--tl-radius);padding:8px 20px 18px}
+.tl-rank-box h3{font-size:16px;padding:14px 0 12px;border-bottom:1px dashed #2e2927;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.tl-rank-box h3 i{width:6px;height:16px;border-radius:3px;background:var(--tl-red);display:inline-block}
+.tl-rank-item{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #262120;font-size:13.5px;transition:.2s}
+.tl-rank-item:last-child{border-bottom:none}
+.tl-rank-item:hover{color:var(--tl-gold)}
+.tl-rank-no{width:22px;font-size:14px;font-weight:800;color:#6f6761;text-align:center;flex:0 0 auto}
+.tl-rank-item.top1 .tl-rank-no{color:#ff6a5a}
+.tl-rank-item.top2 .tl-rank-no{color:#ffcc66}
+.tl-rank-item.top3 .tl-rank-no{color:#d8b48a}
+.tl-rank-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tl-rank-heat{font-size:12px;color:#8f8681;flex:0 0 auto}
+
+/* ---------- 动态 ---------- */
+.tl-news{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.tl-news-item{
+  display:flex;gap:16px;background:var(--tl-panel);border:1px solid var(--tl-line);
+  border-radius:12px;padding:16px 18px;transition:.2s;
+}
+.tl-news-item:hover{border-color:rgba(255,204,102,.4);transform:translateX(3px)}
+.tl-news-date{
+  flex:0 0 auto;width:64px;text-align:center;border-right:1px solid #2e2927;padding-right:14px;
+}
+.tl-news-date b{display:block;font-size:20px;color:var(--tl-gold);line-height:1.2}
+.tl-news-date span{font-size:11px;color:var(--tl-muted)}
+.tl-news-body h3{font-size:14.5px;margin-bottom:4px}
+.tl-news-body p{font-size:12.5px;color:var(--tl-muted)}
+
+/* ---------- FAQ ---------- */
+.tl-faq{max-width:860px;margin:0 auto}
+.tl-faq details{
+  background:var(--tl-panel);border:1px solid var(--tl-line);border-radius:12px;
+  margin-bottom:12px;overflow:hidden;transition:.2s;
+}
+.tl-faq details[open]{border-color:rgba(224,72,58,.5)}
+.tl-faq summary{
+  padding:15px 20px;font-size:14.5px;font-weight:600;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.tl-faq summary::-webkit-details-marker{display:none}
+.tl-faq summary::after{content:"＋";color:var(--tl-red-soft);font-size:16px;flex:0 0 auto;transition:.2s}
+.tl-faq details[open] summary::after{content:"－"}
+.tl-faq .tl-faq-a{padding:0 20px 16px;font-size:13.5px;color:#b7aea8;line-height:1.85}
+
+/* ---------- 联系/投稿 ---------- */
+.tl-cta{
+  background:
+    radial-gradient(circle at 88% 18%,rgba(224,72,58,.24),transparent 55%),
+    radial-gradient(circle at 6% 82%,rgba(255,204,102,.14),transparent 50%),
+    #191514;
+  border:1px solid #362e2c;border-radius:18px;padding:40px 36px;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;
+}
+.tl-cta h2{font-size:24px;margin-bottom:12px}
+.tl-cta p{font-size:14px;color:#c4bbb5;margin-bottom:22px;max-width:520px}
+.tl-cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+.tl-cta-side{display:flex;flex-direction:column;gap:12px}
+.tl-cta-info{
+  background:#211c1b;border:1px solid #362e2c;border-radius:12px;padding:14px 18px;
+  display:flex;justify-content:space-between;font-size:13px;color:#c4bbb5;
+}
+.tl-cta-info b{color:#fff}
+
+/* ---------- 页脚 ---------- */
+.tl-footer{background:#0e0c0b;border-top:1px solid var(--tl-line);padding:52px 0 26px}
+.tl-footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:36px}
+.tl-footer-brand p{font-size:13px;color:#8f8681;margin-top:14px;max-width:300px;line-height:1.85}
+.tl-footer h4{font-size:14px;color:#e6ded8;margin-bottom:14px;letter-spacing:1px}
+.tl-footer ul li{font-size:13px;color:#948b85;margin-bottom:9px}
+.tl-footer ul li a:hover{color:var(--tl-gold)}
+.tl-footer-bottom{
+  border-top:1px solid #221e1d;padding-top:22px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12.5px;color:#7a726d;
+}
+.tl-footer-bottom span{display:inline-block;margin-right:14px}
+
+/* ---------- 回到顶部 / Toast / 弹窗 ---------- */
+.tl-top-btn{
+  position:fixed;right:24px;bottom:28px;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(140deg,#e0483a,#8f2620);color:#fff;font-size:18px;
+  display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.5);
+  opacity:0;pointer-events:none;transition:.3s;z-index:90;
+}
+.tl-top-btn.is-show{opacity:1;pointer-events:auto}
+.tl-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+  background:#2a2422;border:1px solid #453b38;color:#fff;font-size:13px;
+  padding:11px 22px;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,.55);
+  opacity:0;pointer-events:none;transition:.3s;z-index:200;
+}
+.tl-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.tl-modal{
+  position:fixed;inset:0;z-index:210;display:none;align-items:center;justify-content:center;
+  background:rgba(6,5,5,.72);backdrop-filter:blur(4px);padding:20px;
+}
+.tl-modal.is-open{display:flex}
+.tl-modal-card{
+  background:#1c1918;border:1px solid #3d3533;border-radius:16px;max-width:520px;width:100%;
+  padding:26px 26px 22px;box-shadow:var(--tl-shadow);position:relative;
+  max-height:86vh;overflow:auto;
+}
+.tl-modal-card h3{font-size:18px;margin-bottom:6px;padding-right:30px}
+.tl-modal-card .tl-modal-sub{font-size:13px;color:var(--tl-muted);margin-bottom:16px}
+.tl-modal-close{position:absolute;right:14px;top:12px;font-size:20px;color:#a79e98}
+.tl-modal-close:hover{color:#fff}
+.tl-modal-card label{display:block;font-size:12.5px;color:#c9c0ba;margin:12px 0 6px}
+.tl-modal-card input,.tl-modal-card textarea,.tl-modal-card select{
+  width:100%;background:#151211;border:1px solid #38302e;border-radius:9px;
+  padding:10px 12px;color:#efe9e4;font-size:13.5px;outline:none;font-family:inherit;
+}
+.tl-modal-card input:focus,.tl-modal-card textarea:focus{border-color:var(--tl-red)}
+.tl-modal-card textarea{resize:vertical;min-height:84px}
+.tl-modal-actions{display:flex;gap:12px;margin-top:20px;justify-content:flex-end}
+.tl-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.tl-share-row button{
+  flex:1 1 90px;border:1px solid #3d3533;border-radius:10px;padding:12px 6px;
+  font-size:13px;color:#d6cec8;transition:.2s;text-align:center;
+}
+.tl-share-row button:hover{border-color:var(--tl-gold);color:var(--tl-gold);background:rgba(255,204,102,.07)}
+.tl-author-card{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.tl-author-card .tl-creator-ava{margin:0;width:58px;height:58px;font-size:19px}
+.tl-author-card h4{font-size:16px}
+.tl-author-card span{font-size:12.5px;color:var(--tl-gold)}
+
+/* ---------- 搜索提示 ---------- */
+.tl-search-hint{
+  display:none;font-size:12.5px;color:var(--tl-gold);margin-top:6px;
+}
+.tl-search-hint.is-show{display:block}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1080px){
+  .tl-hero-inner{grid-template-columns:1fr;gap:36px}
+  .tl-hero-visual{order:-1}
+  .tl-focus-grid{grid-template-columns:1fr}
+  .tl-focus-side{grid-template-rows:auto;grid-template-columns:1fr 1fr}
+  .tl-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .tl-about-inner{grid-template-columns:1fr}
+  .tl-about-side{position:static}
+  .tl-cta{grid-template-columns:1fr}
+  .tl-footer-top{grid-template-columns:1fr 1fr}
+  .tl-rank{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  html{scroll-padding-top:118px}
+  .tl-nav{display:none}
+  .tl-search-mini{display:none}
+  .tl-header-actions .tl-search-mini{display:none}
+  .tl-burger{display:flex}
+  .tl-grid-3{grid-template-columns:1fr 1fr}
+  .tl-topic-grid{grid-template-columns:1fr 1fr}
+  .tl-rate-grid{grid-template-columns:1fr 1fr}
+  .tl-news{grid-template-columns:1fr}
+  .tl-vcard-featured{grid-column:span 2}
+  .tl-wall{grid-template-columns:repeat(4,1fr);grid-auto-rows:88px}
+  .tl-w-lg{grid-column:span 2;grid-row:span 2}
+  .tl-w-md{grid-column:span 2}
+  .tl-w-sm{grid-column:span 2}
+}
+@media (max-width:600px){
+  .tl-section{padding:46px 0}
+  .tl-hero-inner{padding:44px 18px 40px}
+  .tl-hero-stats{gap:20px}
+  .tl-grid-3,.tl-grid-2,.tl-topic-grid,.tl-rate-grid{grid-template-columns:1fr}
+  .tl-focus-side{grid-template-columns:1fr}
+  .tl-focus-side .tl-vcard{flex-direction:column}
+  .tl-focus-side .tl-cover{width:100%;min-height:auto}
+  .tl-creator-grid{grid-template-columns:1fr}
+  .tl-vcard-featured{grid-column:span 1}
+  .tl-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:104px}
+  .tl-w-lg{grid-column:span 2;grid-row:span 2}
+  .tl-w-md{grid-column:span 2;grid-row:span 1}
+  .tl-w-sm{grid-column:span 1}
+  .tl-footer-top{grid-template-columns:1fr}
+  .tl-notice-inner{font-size:12px;padding:8px 14px}
+  .tl-notice-tag{display:none}
+  .tl-header-inner{height:60px;gap:11px;padding:0 14px}
+  .tl-logo-txt strong{font-size:14px}
+  .tl-cta{padding:28px 20px}
+  .tl-sec-title{font-size:21px}
+  .tl-about-text{font-size:14px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶公告 + 页头 ===== -->
+<div class="tl-sticky-wrap">
+  <div class="tl-notice" id="tlNotice">
+    <div class="tl-notice-inner">
+      <span class="tl-notice-tag">今日新增</span>
+      <span class="tl-notice-text">11月19日更新 12 条追踪条目：某商圈连锁餐饮后厨纪实、跨城出行账单对比、创作者"老陈说事"专访上线，专题《不打烊的十二小时》第 6 期已发布。</span>
+      <button class="tl-notice-close" id="tlNoticeClose" aria-label="关闭公告">×</button>
+    </div>
+  </div>
+
+  <header class="tl-header">
+    <div class="tl-header-inner">
+      <a href="#tlHome" class="tl-logo">
+        <span class="tl-logo-mark">虎</span>
+        <span class="tl-logo-txt"><strong>老虎菜·不打烊</strong><span>ORIGINAL VIDEO</span></span>
+      </a>
+      <nav class="tl-nav" aria-label="主导航">
+        <a href="#tlHome" class="is-active">首页</a>
+        <a href="#tlFocus">焦点</a>
+        <a href="#tlTopics">专题</a>
+        <a href="#tlCreators">创作者</a>
+        <a href="#tlWall">影像墙</a>
+        <a href="#tlAbout">品牌解析</a>
+        <a href="#tlNews">动态</a>
+        <a href="#tlFaq">帮助</a>
+        <a href="#tlJoin">联系</a>
+      </nav>
+      <div class="tl-header-actions">
+        <form class="tl-search-mini" id="tlSearchFormTop" role="search">
+          <input type="search" id="tlSearchInputTop" placeholder="搜索爆料 / 话题 / 作者" aria-label="站内搜索">
+          <button type="submit" aria-label="搜索">⌕</button>
+        </form>
+        <button class="tl-burger" id="tlBurger" aria-label="展开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="tl-mobile-nav" id="tlMobileNav">
+      <form class="tl-search-mini" id="tlSearchFormMobile" role="search">
+        <input type="search" id="tlSearchInputMobile" placeholder="搜索爆料 / 话题 / 作者" aria-label="移动端站内搜索">
+        <button type="submit" aria-label="搜索">⌕</button>
+      </form>
+      <a href="#tlHome">首页</a>
+      <a href="#tlFocus">焦点</a>
+      <a href="#tlTopics">专题</a>
+      <a href="#tlCreators">创作者</a>
+      <a href="#tlWall">影像墙</a>
+      <a href="#tlAbout">品牌解析</a>
+      <a href="#tlNews">动态</a>
+      <a href="#tlFaq">帮助</a>
+      <a href="#tlJoin">联系</a>
+      <div class="tl-search-hint" data-hint style="padding:0 22px 14px"></div>
+    </div>
+  </header>
+</div>
+
+<main>
+<!-- ===== 首屏 ===== -->
+<section class="tl-hero" id="tlHome">
+  <div class="tl-hero-inner">
+    <div class="tl-hero-copy">
+      <span class="tl-hero-badge">官方网站 · 原创内容生态</span>
+      <h1>老虎菜吃瓜黑料不打烊</h1>
+      <p class="tl-hero-slogan">热点不散场，影像不间断——做值得信赖的原创爆料视频社区</p>
+      <p class="tl-hero-desc">作为国内领先的热点影像社区品牌，我们深耕城市生活与社会观察的垂直领域，为创作者与企业搭建高品质内容生态。平台以真实、克制、可核验为内容底线，持续运营原创专题与创作者矩阵，让每一条爆料都有出处，每一段影像都有温度。</p>
+      <div class="tl-hero-stats">
+        <div class="tl-hero-stat"><strong>128<em>万+</em></strong><span>社区注册用户</span></div>
+        <div class="tl-hero-stat"><strong>4,600<em>+</em></strong><span>认证创作者</span></div>
+        <div class="tl-hero-stat"><strong>3.2<em>亿</em></strong><span>年度播放次数</span></div>
+      </div>
+      <div class="tl-hero-actions">
+        <a href="#tlFocus" class="tl-btn tl-btn-primary">进入焦点内容</a>
+        <a href="#tlCreators" class="tl-btn tl-btn-ghost">认识创作者</a>
+        <a href="#tlJoin" class="tl-btn tl-btn-ghost">我要投稿</a>
+      </div>
+    </div>
+    <div class="tl-hero-visual">
+      <div class="tl-hero-main-cover">
+        <div class="tl-cover tl-cover-ratio">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23241a18'/%3E%3Cstop offset='1' stop-color='%23130f0e'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23e0483a'/%3E%3Cstop offset='1' stop-color='%23ffcc66'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23a)'/%3E%3Ccircle cx='500' cy='90' r='150' fill='%23e0483a' opacity='0.16'/%3E%3Ccircle cx='120' cy='300' r='120' fill='%23ffcc66' opacity='0.10'/%3E%3Cpath d='M60 250 L180 130 L300 210 L430 90 L590 240' stroke='url(%23b)' stroke-width='3' fill='none' opacity='0.65'/%3E%3Cg fill='%23ffcc66' opacity='0.8'%3E%3Ccircle cx='180' cy='130' r='6'/%3E%3Ccircle cx='430' cy='90' r='6'/%3E%3C/g%3E%3Crect x='60' y='286' width='120' height='12' rx='6' fill='%23e0483a' opacity='0.8'/%3E%3Crect x='60' y='308' width='200' height='8' rx='4' fill='%236b5f59'/%3E%3Ctext x='60' y='60' font-family='sans-serif' font-size='26' font-weight='bold' fill='%23ffcc66'%3E不打烊·追踪%3C/text%3E%3Ctext x='60' y='90' font-family='sans-serif' font-size='13' fill='%23a79e98'%3E12 HOURS TRACKING / EP.06%3C/text%3E%3C/svg%3E" alt="老虎菜不打烊追踪专题第6期封面主视觉">
+          <span class="tl-cover-shade"></span>
+          <span class="tl-cover-tag">独家企划</span>
+          <span class="tl-cover-duration">18:42</span>
+          <span class="tl-play">▶</span>
+        </div>
+      </div>
+      <div class="tl-hero-float">
+        <span class="tl-dot"></span>
+        <p><b>内容更新中</b>　今日已发布 12 条追踪条目，3 个专题连载推进。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 焦点内容 ===== -->
+<section class="tl-section" id="tlFocus">
+  <div class="tl-wrap">
+    <div class="tl-sec-head">
+      <div>
+        <h2 class="tl-sec-title">焦点内容 · 本周精选</h2>
+        <p class="tl-sec-sub">编辑部从上千条投稿中挑出的原创精品，覆盖城市观察、消费测评、人物访谈与幕后创作，每一条都附有信源说明与时间线。</p>
+      </div>
+      <a href="#tlWall" class="tl-sec-more">查看全部影像 →</a>
+    </div>
+
+    <div class="tl-focus-grid">
+      <article class="tl-vcard tl-vcard-featured">
+        <div class="tl-cover tl-cover-ratio">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='c1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23362019'/%3E%3Cstop offset='1' stop-color='%23140e0c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23c1)'/%3E%3Cg opacity='0.85'%3E%3Crect x='40' y='220' width='70' height='110' fill='%234a3128'/%3E%3Crect x='120' y='170' width='70' height='160' fill='%235c3a2c'/%3E%3Crect x='200' y='120' width='70' height='210' fill='%23704330'/%3E%3Crect x='280' y='190' width='70' height='140' fill='%234a3128'/%3E%3Crect x='360' y='90' width='70' height='240' fill='%23804b34'/%3E%3Crect x='440' y='160' width='70' height='170' fill='%235c3a2c'/%3E%3Crect x='520' y='60' width='70' height='270' fill='%23935538'/%3E%3C/g%3E%3Ccircle cx='560' cy='70' r='34' fill='%23ffcc66' opacity='0.7'/%3E%3Cpath d='M40 320 L600 320' stroke='%23e0483a' stroke-width='3' opacity='0.7'/%3E%3Ctext x='40' y='52' font-family='sans-serif' font-size='22' font-weight='bold' fill='%23ffd9a0'%3E后厨十二小时%3C/text%3E%3C/svg%3E" alt="连锁餐饮后厨纪实视频封面：深夜厨房与摊位灯光">
+          <span class="tl-cover-shade"></span>
+          <span class="tl-cover-tag">深度追踪</span>
+          <span class="tl-cover-duration">22:08</span>
+          <span class="tl-play">▶</span>
+        </div>
+        <div class="tl-vcard-body">
+          <h3><a href="#tlFocus">后厨十二小时：一家连锁门店的凌晨三点与备货清单</a></h3>
+          <p class="tl-vcard-desc">我们跟着备货员走了完整一夜，从冷库盘点、解冻记录到凌晨的废弃登记，逐项对照公开的食安规范。视频里出现的每一张单据都做了打码处理，也保留了原始时间戳。</p>
+          <div class="tl-meta">
+            <span class="tl-avatar" style="background:#e0483a">陈</span>
+            <span>老陈说事</span>
+            <span>·</span><span>11月18日</span>
+            <span>·</span><span>1.8万次播放</span>
+          </div>
+          <div class="tl-card-ops">
+            <button class="tl-op" data-like><span>♡</span><span data-count="8624">8624</span></button>
+            <button class="tl-op" data-fav><span>☆</span><span>收藏</span></button>
+            <button class="tl-op" data-comment>💬 评论</button>
+            <button class="tl-op" data-share>↗ 分享</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="tl-focus-side">
+        <article class="tl-vcard">
+          <div class="tl-cover tl-cover-ratio">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%231a2321'/%3E%3Ccircle cx='250' cy='40' r='60' fill='%232fa88a' opacity='0.25'/%3E%3Cpath d='M20 140 L90 90 L150 120 L220 60 L300 110' stroke='%2359d3ae' stroke-width='3' fill='none'/%3E%3Crect x='20' y='150' width='80' height='8' rx='4' fill='%2359d3ae' opacity='0.6'/%3E%3Ctext x='20' y='40' font-family='sans-serif' font-size='15' font-weight='bold' fill='%23a8f0da'%3E跨城账单%3C/text%3E%3C/svg%3E" alt="跨城通勤出行账单对比视频封面">
+            <span class="tl-cover-shade"></span>
+            <span class="tl-cover-tag">数据测评</span>
+            <span class="tl-play">▶</span>
+          </div>
+          <div class="tl-vcard-body">
+            <h3><a href="#tlFocus">跨城上班一年，我把 12 张车票摆在了桌上</a></h3>
+            <p class="tl-vcard-desc">通勤成本、时间损耗与真实体感，一次算给你看。</p>
+            <div class="tl-meta"><span class="tl-avatar" style="background:#2fa88a">林</span><span>林间记录</span><span>·</span><span>11月17日</span></div>
+          </div>
+        </article>
+        <article class="tl-vcard">
+          <div class="tl-cover tl-cover-ratio">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23201a2b'/%3E%3Ccircle cx='90' cy='120' r='70' fill='%237c5cc4' opacity='0.28'/%3E%3Crect x='150' y='50' width='130' height='80' rx='8' fill='%233a2f52'/%3E%3Crect x='160' y='62' width='110' height='6' rx='3' fill='%23b49be8' opacity='0.8'/%3E%3Crect x='160' y='78' width='80' height='6' rx='3' fill='%23b49be8' opacity='0.5'/%3E%3Crect x='160' y='94' width='95' height='6' rx='3' fill='%23b49be8' opacity='0.35'/%3E%3Ctext x='20' y='36' font-family='sans-serif' font-size='15' font-weight='bold' fill='%23d6c8ff'%3E创作者专访%3C/text%3E%3C/svg%3E" alt="创作者专访视频封面：镜头前的访谈场景">
+            <span class="tl-cover-shade"></span>
+            <span class="tl-cover-tag">人物</span>
+            <span class="tl-play">▶</span>
+          </div>
+          <div class="tl-vcard-body">
+            <h3><a href="#tlFocus">专访老陈：做追踪报道的第七年，我学会了慢半拍</a></h3>
+            <p class="tl-vcard-desc">关于信源、节奏与不打扰的底线，他讲得很直白。</p>
+            <div class="tl-meta"><span class="tl-avatar" style="background:#7c5cc4">周</span><span>周游观察</span><span>·</span><span>11月16日</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="tl-grid-3" style="margin-top:24px">
+      <article class="tl-vcard">
+        <div class="tl-cover tl-cover-ratio">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%231b1f26'/%3E%3Cg fill='%233b82c9' opacity='0.7'%3E%3Crect x='30' y='110' width='28' height='50'/%3E%3Crect x='70' y='86' width='28' height='74'/%3E%3Crect x='110' y='124' width='28' height='36'/%3E%3Crect x='150' y='64' width='28' height='96'/%3E%3C/g%3E%3Ccircle cx='250' cy='70' r='40' fill='%23ffcc66' opacity='0.3'/%3E%3Ctext x='22' y='38' font-family='sans-serif' font-size='15' font-weight='bold' fill='%23a9cdf5'%3E样本之外%3C/text%3E%3C/svg%3E" alt="数据样本外观察视频封面柱状图">
+          <span class="tl-cover-shade"></span>
+          <span class="tl-cover-tag">行业观察</span>
+          <span class="tl-play">▶</span>
+        </div>
+        <div class="tl-vcard-body">
+          <h3><a href="#tlFocus">样本之外：一条爆款视频的七天生命周期</a></h3>
+          <p class="tl-vcard-desc">从冷启动到二次扩散，数据曲线讲了个意外的故事。</p>
+          <div class="tl-meta"><span class="tl-avatar" style="background:#3b82c9">许</span><span>许半仙数据</span><span>·</span><span>11月15日</span></div>
+        </div>
+      </article>
+      <article class="tl-vcard">
+        <div class="tl-cover tl-cover-ratio">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23251c17'/%3E%3Cg stroke='%23d98b4a' stroke-width='2' fill='none' opacity='0.8'%3E%3Cpath d='M40 150 Q80 90 120 130 T200 100 T290 120'/%3E%3C/g%3E%3Ccircle cx='120' cy='130' r='7' fill='%23ffcc66'/%3E%3Ccircle cx='200' cy='100' r='7' fill='%23ffcc66'/%3E%3Ctext x='22' y='38' font-family='sans-serif' font-size='15' font-weight='bold' fill='%23ffd9a0'%3E账单夜话%3C/text%3E%3C/svg%3E" alt="账单夜话消费记录视频封面">
+          <span class="tl-cover-shade"></span>
+          <span class="tl-cover-tag">消费纪实</span>
+          <span class="tl-play">▶</span>
+        </div>
+        <div class="tl-vcard-body">
+          <h3><a href="#tlFocus">一个月记账后，我删掉了三个自动续费</a></h3>
+          <p class="tl-vcard-desc">不是劝退消费，只是想让你看清每一笔的去处。</p>
+          <div class="tl-meta"><span class="tl-avatar" style="background:#d98b4a">苏</span><span>苏苏过日子</span><span>·</span><span>11月14日</span></div>
+        </div>
+      </article>
+      <article class="tl-vcard">
+        <div class="tl-cover tl-cover-ratio">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%2314241f'/%3E%3Cg fill='%233ec28a' opacity='0.55'%3E%3Ccircle cx='80' cy='120' r='46'/%3E%3Ccircle cx='150' cy='100' r='34'/%3E%3Ccircle cx='220' cy='132' r='54'/%3E%3C/g%3E%3Cpath d='M20 160 L300 160' stroke='%237fe3b8' stroke-width='2' opacity='0.6'/%3E%3Ctext x='22' y='38' font-family='sans-serif' font-size='15' font-weight='bold' fill='%23a8f0d0'%3E城市夜跑%3C/text%3E%3C/svg%3E" alt="城市夜跑记录视频封面">
+          <span class="tl-cover-shade"></span>
+          <span class="tl-cover-tag">生活方式</span>
+          <span class="tl-play">▶</span>
+        </div>
+        <div class="tl-vcard-body">
+          <h3><a href="#tlFocus">夜跑第 100 天：我拍下了这条街的十二种表情</a></h3>
+          <p class="tl-vcard-desc">同一条路，不同时间，藏着不同的城市脾气。</p>
+          <div class="tl-meta"><span class="tl-avatar" style="background:#3ec28a">柯</span><span>柯一跑</span><span>·</span><span>11月13日</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 专题企划 ===== -->
+<section class="tl-section tl-section-alt" id="tlTopics">
+  <div class="tl-wrap">
+    <div class="tl-sec-head">
+      <div>
+        <h2 class="tl-sec-title">专题企划 · 持续连载</h2>
+        <p class="tl-sec-sub">我们不做一次性热闹。每个专题都有明确的问题意识、更新节奏与核对流程，连载期间接受社区补充与纠错。</p>
+      </div>
+      <a href="#tlNews" class="tl-sec-more">订阅更新提醒 →</a>
+    </div>
+    <div class="tl-topic-grid">
+      <article class="tl-topic">
+        <div class="tl-cover tl-cover-ratio">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%232a1614'/%3E%3Cg stroke='%23e0483a' stroke-width='2' fill='none' opacity='0.75'%3E%3Cpath d='M30 140 C80 60 140 160 190 80 S270 120 300 60'/%3E%3C/g%3E%3Crect x='30' y='150' width='260' height='3' fill='%23ffcc66' opacity='0.5'/%3E%3Ctext x='22' y='36' font-family='sans-serif' font-size='15' font-weight='bold' fill='%23ffb3a8'%3E不打烊的十二小时%3C/text%3E%3C/svg%3E" alt="不打烊的十二小时专题封面：时间曲线">
+          <span class="tl-cover-shade"></span>
+          <span class="tl-cover-tag">连载中</span>
+        </div>
+        <div class="tl-topic-body">
+          <h3>不打烊的十二小时</h3>
+          <p>记录那些在深夜依然运转的行业现场，从便利店、物流仓到医院夜班，每期一个视角，附完整时间线与采访说明。</p>
+          <span class="tl-topic-status">● 已更新 6 期 · 每周三发布</span>
+        </div>
+      </article>
+      <article class="tl-topic">
+        <div class="tl-cover tl-cover-ratio">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23172030'/%3E%3Cg fill='%234f7bd6' opacity='0.55'%3E%3Crect x='40' y='120' width='18' height='30'/%3E%3Crect x='70' y='100' width='18' height='50'/%3E%3Crect x='100' y='78' width='18' height='72'/%3E%3Crect x='130' y='112' width='18' height='38'/%3E%3Crect x='160' y='66' width='18' height='84'/%3E%3C/g%3E%3Ccircle cx='250' cy='60' r='34' fill='%23ffcc66' opacity='0.32'/%3E%3Ctext x='22' y='36' font-family='sans-serif' font-size='15' font-weight='bold' fill='%23b7cdf5'%3E一句话的出处%3C/text%3E%3C/svg%3E" alt="一句话的出处专题封面：信息核对图表">
+          <span class="tl-cover-shade"></span>
+          <span class="tl-cover-tag">已完结</span>
+        </div>
+        <div class="tl-topic-body">
+          <h3>一句话的出处</h3>
+          <p>拆解热传说法背后的来源链条，看信息如何在一层层转述中变形。共 9 集，配套可下载的信源核查手册。</p>
+          <span class="tl-topic-status">◎ 全 9 集已上线 · 附核查手册</span>
+        </div>
+      </article>
+      <article class="tl-topic">
+        <div class="tl-cover tl-cover-ratio">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23231916'/%3E%3Ccircle cx='160' cy='92' r='56' fill='none' stroke='%23ffcc66' stroke-width='2' opacity='0.5'/%3E%3Ccircle cx='160' cy='92' r='34' fill='none' stroke='%23e0483a' stroke-width='2' opacity='0.7'/%3E%3Ccircle cx='160' cy='92' r='8' fill='%23ffcc66'/%3E%3Ctext x='22' y='36' font-family='sans-serif' font-size='15' font-weight='bold' fill='%23ffd9a0'%3E镜头背后%3C/text%3E%3C/svg%3E" alt="镜头背后创作者幕后专题封面">
+          <span class="tl-cover-shade"></span>
+          <span class="tl-cover-tag">筹备中</span>
+        </div>
+        <div class="tl-topic-body">
+          <h3>镜头背后</h3>
+          <p>走进创作者的工作台，看选题会、踩点、补拍与剪辑如何落地。已开放社区共创报名，欢迎提供线索与拍摄建议。</p>
+          <span class="tl-topic-status">○ 招募共创 · 预计 12 月开播</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 品牌深度解析（长文） ===== -->
+<section class="tl-section tl-about" id="tlAbout">
+  <div class="tl-wrap">
+    <div class="tl-about-inner">
+      <div class="tl-about-side">
+        <h2>关于<span>老虎菜吃瓜黑料不打烊</span></h2>
+        <p>一个把"追热点"做成长期工程的原创影像社区。我们不追求第一时间的喧哗，更在意每一条内容经得起回看。</p>
+        <div class="tl-about-badges">
+          <span>官方网站</span><span>原创正版</span><span>高清画质</span>
+          <span>内容生态</span><span>行业领先</span><span>用户至上</span>
+          <span>持续运营</span><span>匠心打磨</span>
+        </div>
+      </div>
+      <div class="tl-about-text">
+        <p>「老虎菜吃瓜黑料不打烊」这个名字，最早来自社区早期用户的一句玩笑——吃瓜要吃新鲜的，老虎菜要拌得够味。我们把它保留下来，是提醒自己：热点内容不该只有猎奇的辣味，还应该有耐嚼的纤维。于是这个品牌从一间四人剪辑室开始，慢慢长成了一个拥有编辑、核查、创作者运营与技术支持团队的视频内容平台，并在官网持续公开内容规范与更新记录。</p>
+        <h3>定位：热点事件的影像档案馆</h3>
+        <p>我们把"老虎菜吃瓜黑料不打烊"定位为热点事件的影像档案馆，而不是话题的放大器。任何一条进入焦点位的内容，都要回答三个问题：信息来自哪里、什么人可以佐证、它会对当事人造成什么影响。基于这套判断，我们把内容分为追踪、测评、访谈、纪实、幕后五大类，每类都有独立的生产流程与伦理边界。追踪类强调时间线与原始素材留档；测评类要求公开测试方法与样本来源；访谈类坚持受访者可回看剪辑片段；纪实类默认对非公共人物面部与住址打码；幕后类则鼓励创作者展示失败与修改过程。</p>
+        <p>在内容组织上，社区采用"专题—条目—片段"的三层结构。一个专题解决一个大问题，条目负责具体的追踪进展，片段则是可独立传播的短视频。这样既保证了深度内容有完整的叙事空间，也让碎片化浏览的用户能够快速理解上下文。截至今年十一月，平台已累计上线 240 余个专题，其中 37 个仍在更新，最长的专题连载已经持续了 15 个月。</p>
+        <div class="tl-about-quote">"不打烊"不是指 24 小时发稿，而是指我们对已经发布的内容保持负责——发现差错就修正，出现新进展就补充，旧视频不删档，只标注。</div>
+        <h3>内容生态：创作者、核查员与普通用户</h3>
+        <p>老虎菜吃瓜黑料不打烊的内容生态由三类角色共同支撑。认证创作者负责一线拍摄与叙事，他们大多是长期扎在某个垂直领域的影像工作者；社区核查员由资深用户志愿担任，负责比对公开信息、标注疑点；普通用户则通过投稿、补充线索、投票与评论参与内容校正。我们为每个认证创作者建立了公开的作品档案与信源习惯记录，也为每次重要修正留下版本说明，让"可信"成为可以被检验的东西，而不是一句口号。</p>
+        <p>为了降低创作门槛，平台提供选题库、脚本模板与剪辑建议工具，并定期举办创作者训练营与主题挑战赛。2026 年我们共举办了 8 场社区挑战，主题从"我家的老物件"到"一条街的十二种声音"，累计收到 1.1 万条投稿。这些投稿中诞生了不少后来的焦点内容，也让许多素人第一次以创作者身份被看见。我们相信，内容生态的活力不来自少数头部，而来自大量愿意认真记录的普通人。</p>
+        <h3>品质与口碑：把标准写在明面上</h3>
+        <p>视频品牌的核心资产是信任。老虎菜吃瓜黑料不打烊对所有发布内容执行三级审看：创作者自审、编辑复审、发布前合规抽检。涉及商业合作的视频必须在片头明确标注，并禁止出现在追踪类条目中。我们也建立了负面清单，明确不制作、不传播侵犯隐私、诱导对立与未经核实指向具体个人的内容。这些规则全部写在官网的帮助中心，任何人都可以查阅、引用与监督。</p>
+        <p>在画质与体验上，平台支持高清与超清播放、逐帧查看与素材来源跳转；在无障碍方面，重点视频提供字幕与文字稿，方便静音环境下的阅读。我们希望"专业"不只体现在设备和参数上，也体现在对观看者时间的尊重——每一条内容的关键信息，都可以在文字稿里找到。</p>
+        <h3>未来：让真实拥有更长的保质期</h3>
+        <p>接下来一年，我们会把更多资源投入到"可回看"这件事上：建立更完整的专题索引、开放历史条目的时间线检索、与高校新闻院系合作开展内容核查工作坊。老虎菜吃瓜黑料不打烊不打算成为最大的视频平台，但希望成为最经得起翻旧账的那一个。热点会过去，影像留下来，这是我们做这件事最朴素的理由。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 创作者矩阵 ===== -->
+<section class="tl-section" id="tlCreators">
+  <div class="tl-wrap">
+    <div class="tl-sec-head">
+      <div>
+        <h2 class="tl-sec-title">创作者矩阵 · 认证作者</h2>
+        <p class="tl-sec-sub">他们来自不同城市与行业，共同点是愿意为一条内容多跑一趟、多问一句。点击卡片可查看作者档案。</p>
+      </div>
+      <a href="#tlJoin" class="tl-sec-more">申请认证 →</a>
+    </div>
+    <div class="tl-creator-grid">
+      <article class="tl-creator">
+        <div class="tl-creator-ava" style="background:linear-gradient(140deg,#e0483a,#8f2620)">陈</div>
+        <h3>老陈说事</h3>
+        <p class="tl-cat">深度追踪 · 城市观察</p>
+        <p>七年追踪报道经验，擅长把复杂事件拆成可核对的时间线，坚持出镜前先跑三趟现场。</p>
+        <div class="tl-creator-dat"><span>作品 <b>186</b></span><span>粉丝 <b>42.6万</b></span></div>
+        <button class="tl-creator-btn" data-author="老陈说事|深度追踪 · 城市观察|七年追踪报道经验，擅长把复杂事件拆成可核对的时间线。|186|42.6万">查看作者档案</button>
+      </article>
+      <article class="tl-creator">
+        <div class="tl-creator-ava" style="background:linear-gradient(140deg,#3b82c9,#1f4c7a)">许</div>
+        <h3>许半仙数据</h3>
+        <p class="tl-cat">数据测评 · 行业观察</p>
+        <p>用公开数据说话的内容作者，每期附可下载的表格与计算过程，欢迎同行挑错。</p>
+        <div class="tl-creator-dat"><span>作品 <b>97</b></span><span>粉丝 <b>28.1万</b></span></div>
+        <button class="tl-creator-btn" data-author="许半仙数据|数据测评 · 行业观察|用公开数据说话的内容作者，每期附可下载的表格与计算过程。|97|28.1万">查看作者档案</button>
+      </article>
+      <article class="tl-creator">
+        <div class="tl-creator-ava" style="background:linear-gradient(140deg,#3ec28a,#1d6b4b)">柯</div>
+        <h3>柯一跑</h3>
+        <p class="tl-cat">生活方式 · 城市夜跑</p>
+        <p>跑步与街拍双线记录者，镜头里多是路灯、便利店和凌晨还亮着的窗户。</p>
+        <div class="tl-creator-dat"><span>作品 <b>142</b></span><span>粉丝 <b>19.8万</b></span></div>
+        <button class="tl-creator-btn" data-author="柯一跑|生活方式 · 城市夜跑|跑步与街拍双线记录者，镜头里多是路灯、便利店和凌晨还亮着的窗户。|142|19.8万">查看作者档案</button>
+      </article>
+      <article class="tl-creator">
+        <div class="tl-creator-ava" style="background:linear-gradient(140deg,#d98b4a,#8a4f1f)">苏</div>
+        <h3>苏苏过日子</h3>
+        <p class="tl-cat">消费纪实 · 实用技巧</p>
+        <p>把每个月的账单摊开讲，不劝退也不鼓吹，只想让消费这件事变得清楚一点。</p>
+        <div class="tl-creator-dat"><span>作品 <b>211</b></span><span>粉丝 <b>35.4万</b></span></div>
+        <button class="tl-creator-btn" data-author="苏苏过日子|消费纪实 · 实用技巧|把每个月的账单摊开讲，不劝退也不鼓吹，只想让消费这件事变得清楚一点。|211|35.4万">查看作者档案</button>
+      </article>
+      <article class="tl-creator">
+        <div class="tl-creator-ava" style="background:linear-gradient(140deg,#7c5cc4,#43306e)">周</div>
+        <h3>周游观察</h3>
+        <p class="tl-cat">人物访谈 · 文化观察</p>
+        <p>擅长在安静的空间里问出好问题，受访者说他是"最不着急的主持人"。</p>
+        <div class="tl-creator-dat"><span>作品 <b>78</b></span><span>粉丝 <b>16.2万</b></span></div>
+        <button class="tl-creator-btn" data-author="周游观察|人物访谈 · 文化观察|擅长在安静的空间里问出好问题，受访者说他是"最不着急的主持人"。|78|16.2万">查看作者档案</button>
+      </article>
+      <article class="tl-creator">
+        <div class="tl-creator-ava" style="background:linear-gradient(140deg,#2fa88a,#14564a)">林</div>
+        <h3>林间记录</h3>
+        <p class="tl-cat">日常记录 · 通勤纪实</p>
+        <p>专注记录普通人的通勤与迁徙，一条视频里常常只有车窗外移动的风景。</p>
+        <div class="tl-creator-dat"><span>作品 <b>63</b></span><span>粉丝 <b>11.5万</b></span></div>
+        <button class="tl-creator-btn" data-author="林间记录|日常记录 · 通勤纪实|专注记录普通人的通勤与迁徙，一条视频里常常只有车窗外移动的风景。|63|11.5万">查看作者档案</button>
+      </article>
+      <article class="tl-creator">
+        <div class="tl-creator-ava" style="background:linear-gradient(140deg,#c44a7a,#7a2448)">方</div>
+        <h3>方老师拆片</h3>
+        <p class="tl-cat">教程干货 · 创作幕后</p>
+        <p>十年剪辑师，拆解镜头语言与叙事节奏，课程素材全部可商用授权。</p>
+        <div class="tl-creator-dat"><span>作品 <b>155</b></span><span>粉丝 <b>24.9万</b></span></div>
+        <button class="tl-creator-btn" data-author="方老师拆片|教程干货 · 创作幕后|十年剪辑师，拆解镜头语言与叙事节奏，课程素材全部可商用授权。|155|24.9万">查看作者档案</button>
+      </article>
+      <article class="tl-creator">
+        <div class="tl-creator-ava" style="background:linear-gradient(140deg,#5b8def,#2a4d9e)">白</div>
+        <h3>白露看城</h3>
+        <p class="tl-cat">城市探索 · 在地文化</p>
+        <p>走街串巷的文化观察者，偏爱菜市场、旧书摊和即将改造的老街区。</p>
+        <div class="tl-creator-dat"><span>作品 <b>89</b></span><span>粉丝 <b>21.7万</b></span></div>
+        <button class="tl-creator-btn" data-author="白露看城|城市探索 · 在地文化|走街串巷的文化观察者，偏爱菜市场、旧书摊和即将改造的老街区。|89|21.7万">查看作者档案</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 影像墙 ===== -->
+<section class="tl-section tl-section-alt" id="tlWall">
+  <div class="tl-wrap">
+    <div class="tl-sec-head">
+      <div>
+        <h2 class="tl-sec-title">社区影像墙 · 本周共提交</h2>
+        <p class="tl-sec-sub">来自社区用户的一手记录，尺寸不同、题材各异。每一张都经过基础合规检查，欢迎补充背景信息。</p>
+      </div>
+      <a href="#tlJoin" class="tl-sec-more">我要上传 →</a>
+    </div>
+    <div class="tl-wall">
+      <div class="tl-wall-item tl-w-lg">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23241b18'/%3E%3Ccircle cx='380' cy='70' r='100' fill='%23e0483a' opacity='0.18'/%3E%3Crect x='40' y='180' width='400' height='10' fill='%234a3a34'/%3E%3Crect x='60' y='120' width='80' height='60' fill='%236b4a3a'/%3E%3Crect x='160' y='90' width='80' height='90' fill='%23855c46'/%3E%3Crect x='260' y='140' width='80' height='40' fill='%235c4034'/%3E%3Cpath d='M40 200 Q240 150 440 200' stroke='%23ffcc66' stroke-width='2' fill='none' opacity='0.6'/%3E%3Ctext x='40' y='60' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23ffd9a0'%3E凌晨的批发市场%3C/text%3E%3C/svg%3E" alt="凌晨的批发市场影像记录">
+        <span class="tl-wall-cap">凌晨的批发市场 · @三斤半</span>
+      </div>
+      <div class="tl-wall-item tl-w-md">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23152320'/%3E%3Cg stroke='%2359d3ae' stroke-width='2' fill='none' opacity='0.7'%3E%3Cpath d='M20 240 L100 160 L170 200 L250 100 L300 150'/%3E%3C/g%3E%3Ccircle cx='250' cy='100' r='8' fill='%23ffcc66'/%3E%3Crect x='20' y='260' width='280' height='6' rx='3' fill='%232fa88a' opacity='0.5'/%3E%3Ctext x='20' y='44' font-family='sans-serif' font-size='16' fill='%23a8f0da'%3E山道晨雾%3C/text%3E%3C/svg%3E" alt="山道晨雾影像记录">
+        <span class="tl-wall-cap">山道晨雾 · @走山的阿昭</span>
+      </div>
+      <div class="tl-wall-item tl-w-sm">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 160'%3E%3Crect width='320' height='160' fill='%232a2019'/%3E%3Cg fill='%23d98b4a' opacity='0.6'%3E%3Ccircle cx='80' cy='90' r='30'/%3E%3Ccircle cx='160' cy='70' r='24'/%3E%3Ccircle cx='240' cy='100' r='36'/%3E%3C/g%3E%3Ctext x='20' y='36' font-family='sans-serif' font-size='15' fill='%23ffd9a0'%3E老巷手艺%3C/text%3E%3C/svg%3E" alt="老巷手艺影像记录">
+        <span class="tl-wall-cap">老巷手艺 · @纸灯阿满</span>
+      </div>
+      <div class="tl-wall-item tl-w-md">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%231a1d26'/%3E%3Cg fill='%234f7bd6' opacity='0.55'%3E%3Crect x='30' y='180' width='24' height='80'/%3E%3Crect x='70' y='140' width='24' height='120'/%3E%3Crect x='110' y='200' width='24' height='60'/%3E%3Crect x='150' y='110' width='24' height='150'/%3E%3Crect x='190' y='170' width='24' height='90'/%3E%3C/g%3E%3Ccircle cx='260' cy='80' r='40' fill='%23ffcc66' opacity='0.3'/%3E%3Ctext x='20' y='44' font-family='sans-serif' font-size='16' fill='%23b7cdf5'%3E夜班车流%3C/text%3E%3C/svg%3E" alt="夜班车流影像记录">
+        <span class="tl-wall-cap">夜班车流 · @路口的灯</span>
+      </div>
+      <div class="tl-wall-item tl-w-sm">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 160'%3E%3Crect width='320' height='160' fill='%23251a24'/%3E%3Cg fill='%237c5cc4' opacity='0.55'%3E%3Cellipse cx='120' cy='90' rx='70' ry='40'/%3E%3Cellipse cx='220' cy='110' rx='50' ry='28'/%3E%3C/g%3E%3Ctext x='20' y='36' font-family='sans-serif' font-size='15' fill='%23d6c8ff'%3E雨夜便利店%3C/text%3E%3C/svg%3E" alt="雨夜便利店影像记录">
+        <span class="tl-wall-cap">雨夜便利店 · @小满拍雨</span>
+      </div>
+      <div class="tl-wall-item tl-w-sm">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 160'%3E%3Crect width='320' height='160' fill='%231d241c'/%3E%3Cg fill='%233ec28a' opacity='0.5'%3E%3Cpath d='M40 130 Q90 60 160 100 T290 90 L290 150 L40 150 Z'/%3E%3C/g%3E%3Ccircle cx='90' cy='50' r='20' fill='%23ffcc66' opacity='0.6'/%3E%3Ctext x='20' y='34' font-family='sans-serif' font-size='15' fill='%23a8f0d0'%3E郊野骑行%3C/text%3E%3C/svg%3E" alt="郊野骑行影像记录">
+        <span class="tl-wall-cap">郊野骑行 · @两个轮子</span>
+      </div>
+      <div class="tl-wall-item tl-w-md">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23251d1a'/%3E%3Crect x='40' y='80' width='240' height='160' rx='10' fill='%2338302a'/%3E%3Crect x='60' y='100' width='200' height='110' rx='6' fill='%23110e0d'/%3E%3Crect x='80' y='130' width='120' height='8' rx='4' fill='%23e0483a' opacity='0.7'/%3E%3Crect x='80' y='150' width='160' height='8' rx='4' fill='%23ffcc66' opacity='0.45'/%3E%3Ctext x='20' y='46' font-family='sans-serif' font-size='16' fill='%23ffd9a0'%3E剪辑画面%3C/text%3E%3C/svg%3E" alt="剪辑台画面影像记录">
+        <span class="tl-wall-cap">剪辑台第 6 版 · @方老师拆片</span>
+      </div>
+      <div class="tl-wall-item tl-w-sm">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 160'%3E%3Crect width='320' height='160' fill='%23241a1f'/%3E%3Ccircle cx='70' cy='90' r='40' fill='%23c44a7a' opacity='0.5'/%3E%3Ccircle cx='180' cy='70' r='28' fill='%23ffcc66' opacity='0.4'/%3E%3Cpath d='M20 140 L300 140' stroke='%23c44a7a' stroke-width='3' opacity='0.6'/%3E%3Ctext x='20' y='36' font-family='sans-serif' font-size='15' fill='%23ffc4dd'%3E街头即兴%3C/text%3E%3C/svg%3E" alt="街头即兴影像记录">
+        <span class="tl-wall-cap">街头即兴 · @三号音箱</span>
+      </div>
+      <div class="tl-wall-item tl-w-sm">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 160'%3E%3Crect width='320' height='160' fill='%231c2022'/%3E%3Cg stroke='%235b8def' stroke-width='2' fill='none' opacity='0.7'%3E%3Crect x='40' y='60' width='240' height='70' rx='8'/%3E%3C/g%3E%3Crect x='60' y='80' width='70' height='6' rx='3' fill='%23b7cdf5' opacity='0.8'/%3E%3Crect x='60' y='98' width='120' height='6' rx='3' fill='%23b7cdf5' opacity='0.4'/%3E%3Ctext x='20' y='36' font-family='sans-serif' font-size='15' fill='%23a9cdf5'%3E信息核对%3C/text%3E%3C/svg%3E" alt="信息核对工作台影像记录">
+        <span class="tl-wall-cap">核对工作台 · @林间记录</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 用户评价 + 榜单 ===== -->
+<section class="tl-section" id="tlVoice">
+  <div class="tl-wrap">
+    <div class="tl-sec-head">
+      <div>
+        <h2 class="tl-sec-title">社区回声 · 榜单速览</h2>
+        <p class="tl-sec-sub">来自用户与同行的真实反馈，以及每周热度与新人榜单。口碑不是写出来的，是一条条内容攒出来的。</p>
+      </div>
+      <a href="#tlFaq" class="tl-sec-more">常见问题 →</a>
+    </div>
+
+    <div class="tl-rate-grid">
+      <div class="tl-rate">
+        <div class="tl-rate-stars">★★★★★</div>
+        <p>看老陈的追踪片两年了，最服气的是他会在评论区补一条"这里我说错了"。这种愿意认错的创作者不多，所以愿意一直追下去。</p>
+        <div class="tl-rate-who"><span class="tl-avatar" style="background:#e0483a">阿</span><b>阿梨不吃梨</b><span>· 社区用户 · 3 年</span></div>
+      </div>
+      <div class="tl-rate">
+        <div class="tl-rate-stars">★★★★☆</div>
+        <p>专题的更新节奏很稳，每周三准时能刷到新的一期。作为同行，我更喜欢他们每条视频末尾附的素材说明，省了不少核对的功夫。</p>
+        <div class="tl-rate-who"><span class="tl-avatar" style="background:#3b82c9">吴</span><b>吴编辑</b><span>· 媒体从业者</span></div>
+      </div>
+      <div class="tl-rate">
+        <div class="tl-rate-stars">★★★★★</div>
+        <p>第一次投稿就被编辑回复了，还帮我改了两处时间线错误。虽然最后没上焦点，但那种被认真对待的感觉挺难得的。</p>
+        <div class="tl-rate-who"><span class="tl-avatar" style="background:#3ec28a">豆</span><b>豆角焖面</b><span>· 投稿作者</span></div>
+      </div>
+      <div class="tl-rate">
+        <div class="tl-rate-stars">★★★★☆</div>
+        <p>画面清晰度确实到位，关键是我妈这种不爱看长视频的人也能接受，因为每期都有文字稿，她直接看文字就行。</p>
+        <div class="tl-rate-who"><span class="tl-avatar" style="background:#d98b4a">小</span><b>小楼听雨</b><span>· 社区用户</span></div>
+      </div>
+      <div class="tl-rate">
+        <div class="tl-rate-stars">★★★★★</div>
+        <p>做地方文旅账号的，最缺的就是可信的在地素材。在这里认识了两个本地创作者，合作拍的片子后来还拿了小奖。</p>
+        <div class="tl-rate-who"><span class="tl-avatar" style="background:#7c5cc4">青</span><b>青石板路</b><span>· 合作机构</span></div>
+      </div>
+      <div class="tl-rate">
+        <div class="tl-rate-stars">★★★☆☆</div>
+        <p>整体挺好，就是希望追踪类能多出点进度小结，有时候一个专题追太久，前面的线索有点记不住了，能有个回顾页就更好。</p>
+        <div class="tl-rate-who"><span class="tl-avatar" style="background:#5b8def">老</span><b>老槐树下</b><span>· 社区用户 · 建议反馈</span></div>
+      </div>
+    </div>
+
+    <div class="tl-rank" style="margin-top:32px">
+      <div class="tl-rank-box">
+        <h3><i></i>本周热度榜</h3>
+        <a class="tl-rank-item top1" href="#tlFocus"><span class="tl-rank-no">1</span><span class="tl-rank-name">后厨十二小时：凌晨三点的备货清单</span><span class="tl-rank-heat">1.8万</span></a>
+        <a class="tl-rank-item top2" href="#tlFocus"><span class="tl-rank-no">2</span><span class="tl-rank-name">跨城上班一年，12 张车票摆上桌</span><span class="tl-rank-heat">1.4万</span></a>
+        <a class="tl-rank-item top3" href="#tlFocus"><span class="tl-rank-no">3</span><span class="tl-rank-name">专访老陈：追踪报道第七年</span><span class="tl-rank-heat">1.2万</span></a>
+        <a class="tl-rank-item" href="#tlFocus"><span class="tl-rank-no">4</span><span class="tl-rank-name">一条爆款视频的七天生命周期</span><span class="tl-rank-heat">9,860</span></a>
+        <a class="tl-rank-item" href="#tlFocus"><span class="tl-rank-no">5</span><span class="tl-rank-name">夜跑第 100 天：街道的十二种表情</span><span class="tl-rank-heat">8,420</span></a>
+      </div>
+      <div class="tl-rank-box">
+        <h3><i style="background:#ffcc66"></i>新人潜力榜</h3>
+        <a class="tl-rank-item top1" href="#tlCreators"><span class="tl-rank-no">1</span><span class="tl-rank-name">雨夜便利店 · 小满拍雨</span><span class="tl-rank-heat">新人</span></a>
+        <a class="tl-rank-item top2" href="#tlCreators"><span class="tl-rank-no">2</span><span class="tl-rank-name">山道晨雾 · 走山的阿昭</span><span class="tl-rank-heat">新人</span></a>
+        <a class="tl-rank-item top3" href="#tlCreators"><span class="tl-rank-no">3</span><span class="tl-rank-name">老巷手艺 · 纸灯阿满</span><span class="tl-rank-heat">新人</span></a>
+        <a class="tl-rank-item" href="#tlCreators"><span class="tl-rank-no">4</span><span class="tl-rank-name">夜班车流 · 路口的灯</span><span class="tl-rank-heat">新晋</span></a>
+        <a class="tl-rank-item" href="#tlCreators"><span class="tl-rank-no">5</span><span class="tl-rank-name">郊野骑行 · 两个轮子</span><span class="tl-rank-heat">新晋</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 企业动态 ===== -->
+<section class="tl-section tl-section-alt" id="tlNews">
+  <div class="tl-wrap">
+    <div class="tl-sec-head">
+      <div>
+        <h2 class="tl-sec-title">企业动态 · 官方发布</h2>
+        <p class="tl-sec-sub">平台规则调整、专题进度与社区活动，均在此同步。官方信息以本页为准。</p>
+      </div>
+      <a href="#tlJoin" class="tl-sec-more">媒体联络 →</a>
+    </div>
+    <div class="tl-news">
+      <div class="tl-news-item">
+        <div class="tl-news-date"><b>11/19</b><span>2026</span></div>
+        <div class="tl-news-body">
+          <h3>《不打烊的十二小时》第 6 期上线</h3>
+          <p>本期走进连锁餐饮后厨，附完整时间线与素材说明文档，可在帮助中心下载。</p>
+        </div>
+      </div>
+      <div class="tl-news-item">
+        <div class="tl-news-date"><b>11/15</b><span>2026</span></div>
+        <div class="tl-news-body">
+          <h3>内容规范 3.0 版本发布</h3>
+          <p>新增对商业合作标注的细化要求，并明确追踪类条目的信源留存期限。</p>
+        </div>
+      </div>
+      <div class="tl-news-item">
+        <div class="tl-news-date"><b>11/08</b><span>2026</span></div>
+        <div class="tl-news-body">
+          <h3>冬季创作者训练营开放报名</h3>
+          <p>共 6 次线上课程，覆盖选题、拍摄与合规，报名截止 11 月 30 日。</p>
+        </div>
+      </div>
+      <div class="tl-news-item">
+        <div class="tl-news-date"><b>10/28</b><span>2026</span></div>
+        <div class="tl-news-body">
+          <h3>社区投票功能上线</h3>
+          <p>用户可对专题后续选题方向进行投票，首轮投票参与人数超过 2.3 万。</p>
+        </div>
+      </div>
+      <div class="tl-news-item">
+        <div class="tl-news-date"><b>10/12</b><span>2026</span></div>
+        <div class="tl-news-body">
+          <h3>与三所高校新闻院系达成合作</h3>
+          <p>共同开展内容核查工作坊，首期成果将于明年一月公开分享。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="tl-section" id="tlFaq">
+  <div class="tl-wrap">
+    <div class="tl-sec-head">
+      <div>
+        <h2 class="tl-sec-title">帮助中心 · 常见问题</h2>
+        <p class="tl-sec-sub">关于投稿、核查与版权的高频问题。找不到答案？可以在下方的联系入口直接提问。</p>
+      </div>
+    </div>
+    <div class="tl-faq">
+      <details open>
+        <summary>如何向老虎菜吃瓜黑料不打烊投稿？</summary>
+        <div class="tl-faq-a">在"联系与投稿"区域点击"我要投稿"，填写素材来源、拍摄时间与可用授权说明。视频建议提供原始文件或未经二次压缩的版本，方便我们核对时间戳。编辑会在 5 个工作日内给出初审意见。</div>
+      </details>
+      <details>
+        <summary>平台如何核实一条爆料？</summary>
+        <div class="tl-faq-a">我们采用"三源交叉"原则：优先比对公开可查的原始记录，其次联系事件相关方，最后由社区核查员标注疑点。无法核实的部分会在视频中明确标注为"待核实"，并保留后续修正空间。</div>
+      </details>
+      <details>
+        <summary>为什么有些内容会打码或消音？</summary>
+        <div class="tl-faq-a">涉及非公共人物的面部、住址、证件号码与联系方式时，我们默认进行不可逆处理。这不是为了削弱信息量，而是避免影像对当事人造成长期影响。必要信息会以文字说明的方式补充。</div>
+      </details>
+      <details>
+        <summary>商业合作内容如何识别？</summary>
+        <div class="tl-faq-a">所有商业合作视频在片头与简介顶部均标注"商业合作"字样，且不会出现在追踪类专题中。用户如发现未标注的合作内容，可通过举报入口反馈，核实后我们会下架整改。</div>
+      </details>
+      <details>
+        <summary>能否下载视频用于教学或转载？</summary>
+        <div class="tl-faq-a">平台原创内容采用授权制。教学、研究等非商业用途可提交申请，注明使用范围与期限；商业转载需签署授权协议。请勿直接搬运，二次剪辑也需保留原始出处与素材说明。</div>
+      </details>
+      <details>
+        <summary>专题更新频率是怎样的？</summary>
+        <div class="tl-faq-a">追踪类专题通常每周三更新，访谈类为双周更新，纪实类视拍摄进度而定。已完结专题会保留完整索引，并定期补充后续进展。你可以在动态区查看最新更新记录。</div>
+      </details>
+      <details>
+        <summary>发现内容有误怎么办？</summary>
+        <div class="tl-faq-a">每一条内容下方都有"举报与纠错"入口。请尽量提供可核对的依据，我们会在 48 小时内响应。确认有误的内容会更新版本说明，并在视频简介中保留修正记录。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 联系与投稿 ===== -->
+<section class="tl-section" id="tlJoin">
+  <div class="tl-wrap">
+    <div class="tl-cta">
+      <div>
+        <h2>一起把靠谱的内容做得更久一点</h2>
+        <p>无论你手里有一条线索、一段素材，还是想加入创作者矩阵，老虎菜吃瓜黑料不打烊都欢迎。投稿、合作与纠错，从这里开始。</p>
+        <div class="tl-cta-actions">
+          <button class="tl-btn tl-btn-primary" data-open="submit">我要投稿</button>
+          <button class="tl-btn tl-btn-ghost" data-open="contact">商务与合作</button>
+          <button class="tl-btn tl-btn-ghost" data-open="report">举报与纠错</button>
+        </div>
+      </div>
+      <div class="tl-cta-side">
+        <div class="tl-cta-info"><span>投稿邮箱</span><b>submit@laohucai-video.cn</b></div>
+        <div class="tl-cta-info"><span>合作联络</span><b>partner@laohucai-video.cn</b></div>
+        <div class="tl-cta-info"><span>办公地址</span><b>城市影像产业园 B 座 7 层</b></div>
+        <div class="tl-cta-info"><span>响应时间</span><b>工作日 10:00 - 19:00</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="tl-footer">
+  <div class="tl-wrap">
+    <div class="tl-footer-top">
+      <div class="tl-footer-brand">
+        <a href="#tlHome" class="tl-logo">
+          <span class="tl-logo-mark">虎</span>
+          <span class="tl-logo-txt"><strong>老虎菜·不打烊</strong><span>ORIGINAL VIDEO</span></span>
+        </a>
+        <p>老虎菜吃瓜黑料不打烊官方网站，专注热点事件的原创影像记录与深度解读。我们坚持正版高清、信源可查、修正留痕，与创作者一起持续运营一个值得信赖的内容社区。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#tlFocus">焦点内容</a></li>
+          <li><a href="#tlTopics">专题企划</a></li>
+          <li><a href="#tlWall">社区影像墙</a></li>
+          <li><a href="#tlVoice">社区回声</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#tlAbout">品牌故事</a></li>
+          <li><a href="#tlCreators">创作者矩阵</a></li>
+          <li><a href="#tlNews">企业动态</a></li>
+          <li><a href="#tlFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与共建</h4>
+        <ul>
+          <li><a href="#tlJoin">投稿入口</a></li>
+          <li><a href="#tlJoin">商务合作</a></li>
+          <li><a href="#tlJoin">举报纠错</a></li>
+          <li><a href="#tlJoin">创作者认证</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-footer-bottom">
+      <div>
+        <span>© 2026 老虎菜吃瓜黑料不打烊 官方网站</span>
+        <span>内容授权与版权说明见帮助中心</span>
+        <span>持续运营中</span>
+      </div>
+      <div>
+        <span>合规备案号：影像内容备字 2026-0287</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="tl-top-btn" id="tlTopBtn" aria-label="回到顶部">↑</button>
+<div class="tl-toast" id="tlToast" role="status" aria-live="polite"></div>
+
+<!-- ===== 弹窗：作者档案 ===== -->
+<div class="tl-modal" id="tlModalAuthor">
+  <div class="tl-modal-card">
+    <button class="tl-modal-close" data-close aria-label="关闭">×</button>
+    <div class="tl-author-card">
+      <div class="tl-creator-ava" id="tlAuthorAva" style="background:#e0483a">陈</div>
+      <div>
+        <h4 id="tlAuthorName">创作者</h4>
+        <span id="tlAuthorCat">领域</span>
+      </div>
+    </div>
+    <p class="tl-modal-sub" id="tlAuthorDesc">创作者简介</p>
+    <div class="tl-cta-info" style="margin-bottom:10px"><span>累计作品</span><b id="tlAuthorWorks">0</b></div>
+    <div class="tl-cta-info"><span>关注人数</span><b id="tlAuthorFans">0</b></div>
+    <div class="tl-modal-actions">
+      <button class="tl-btn tl-btn-ghost" data-close>关闭</button>
+      <button class="tl-btn tl-btn-primary" id="tlFollowBtn">关注创作者</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 弹窗：投稿 ===== -->
+<div class="tl-modal" id="tlModalSubmit">
+  <div class="tl-modal-card">
+    <button class="tl-modal-close" data-close aria-label="关闭">×</button>
+    <h3>投稿 · 老虎菜吃瓜黑料不打烊</h3>
+    <p class="tl-modal-sub">请尽量写清素材来源与拍摄时间，我们会优先处理信息完整的投稿。</p>
+    <form id="tlSubmitForm">
+      <label for="tlSubmitName">称呼</label>
+      <input id="tlSubmitName" type="text" placeholder="怎么称呼你" required>
+      <label for="tlSubmitContact">联系方式</label>
+      <input id="tlSubmitContact" type="text" placeholder="邮箱或常用社交账号" required>
+      <label for="tlSubmitType">内容类型</label>
+      <select id="tlSubmitType">
+        <option>线索爆料</option>
+        <option>原创素材</option>
+        <option>创作者入驻</option>
+        <option>商业合作</option>
+      </select>
+      <label for="tlSubmitDesc">内容说明</label>
+      <textarea id="tlSubmitDesc" placeholder="简要说明事件、时间、地点与可用素材" required></textarea>
+      <div class="tl-modal-actions">
+        <button type="button" class="tl-btn tl-btn-ghost" data-close>取消</button>
+        <button type="submit" class="tl-btn tl-btn-primary">提交</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ===== 弹窗：联系 ===== -->
+<div class="tl-modal" id="tlModalContact">
+  <div class="tl-modal-card">
+    <button class="tl-modal-close" data-close aria-label="关闭">×</button>
+    <h3>商务与合作</h3>
+    <p class="tl-modal-sub">品牌联名、内容共建、场地支持与授权咨询，请通过以下方式联络。</p>
+    <div class="tl-cta-info" style="margin-bottom:10px"><span>合作邮箱</span><b>partner@laohucai-video.cn</b></div>
+    <div class="tl-cta-info" style="margin-bottom:10px"><span>媒体联络</span><b>press@laohucai-video.cn</b></div>
+    <div class="tl-cta-info" style="margin-bottom:10px"><span>办公地址</span><b>城市影像产业园 B 座 7 层</b></div>
+    <div class="tl-cta-info"><span>工作时间</span><b>工作日 10:00 - 19:00</b></div>
+    <div class="tl-modal-actions">
+      <button class="tl-btn tl-btn-primary" data-close>知道了</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 弹窗：举报纠错 ===== -->
+<div class="tl-modal" id="tlModalReport">
+  <div class="tl-modal-card">
+    <button class="tl-modal-close" data-close aria-label="关闭">×</button>
+    <h3>举报与纠错</h3>
+    <p class="tl-modal-sub">请提供可核对的依据，我们会在 48 小时内响应并更新版本说明。</p>
+    <form id="tlReportForm">
+      <label for="tlReportWhat">问题类型</label>
+      <select id="tlReportWhat">
+        <option>信息有误</option>
+        <option>疑似侵权</option>
+        <option>未标注商业合作</option>
+        <option>其他建议</option>
+      </select>
+      <label for="tlReportDesc">具体说明</label>
+      <textarea id="tlReportDesc" placeholder="请描述问题所在的视频与具体位置" required></textarea>
+      <div class="tl-modal-actions">
+        <button type="button" class="tl-btn tl-btn-ghost" data-close>取消</button>
+        <button type="submit" class="tl-btn tl-btn-primary">提交反馈</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ===== 弹窗：分享 ===== -->
+<div class="tl-modal" id="tlModalShare">
+  <div class="tl-modal-card">
+    <button class="tl-modal-close" data-close aria-label="关闭">×</button>
+    <h3>分享这条内容</h3>
+    <p class="tl-modal-sub">把值得讨论的内容，发给值得讨论的人。</p>
+    <div class="tl-share-row">
+      <button data-share-to="微信">微信</button>
+      <button data-share-to="微博">微博</button>
+      <button data-share-to="QQ">QQ</button>
+      <button data-share-to="朋友圈">朋友圈</button>
+    </div>
+    <div class="tl-modal-actions">
+      <button class="tl-btn tl-btn-primary" id="tlCopyBtn">复制链接</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('tlToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 公告关闭 */
+  var notice = document.getElementById('tlNotice');
+  var noticeClose = document.getElementById('tlNoticeClose');
+  if(noticeClose){
+    noticeClose.addEventListener('click', function(){
+      notice.style.display = 'none';
+    });
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('tlBurger');
+  var mobileNav = document.getElementById('tlMobileNav');
+  if(burger && mobileNav){
+    burger.addEventListener('click', function(){
+      var open = mobileNav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mobileNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        mobileNav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* 搜索 */
+  function bindSearch(formId, inputId){
+    var form = document.getElementById(formId);
+    var input = document.getElementById(inputId);
+    if(!form || !input) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var val = input.value.trim();
+      if(!val){
+        toast('请输入想找的话题或作者名');
+        return;
+      }
+      var found = document.querySelectorAll('[data-searchable]');
+      var hit = 0;
+      found.forEach(function(el){
+        if(el.textContent.indexOf(val) > -1) hit++;
+      });
+      if(hit > 0){
+        toast('找到 ' + hit + ' 条与「' + val + '」相关的内容');
+      }else{
+        toast('暂未找到「' + val + '」，可尝试"后厨""通勤""专题"');
+      }
+      input.value = '';
+    });
+  }
+  bindSearch('tlSearchFormTop','tlSearchInputTop');
+  bindSearch('tlSearchFormMobile','tlSearchInputMobile');
+
+  /* 点赞 / 收藏 / 评论 / 分享 */
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('[data-count]');
+      var n = parseInt(span.getAttribute('data-count'), 10);
+      var on = btn.classList.toggle('is-on');
+      n += on ? 1 : -1;
+      span.textContent = n;
+      span.setAttribute('data-count', n);
+      btn.querySelector('span').textContent = on ? '♥' : '♡';
+      toast(on ? '已点赞，感谢支持' : '已取消点赞');
+    });
+  });
+
+  document.querySelectorAll('[data-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      btn.querySelector('span').textContent = on ? '★' : '☆';
+      var label = btn.querySelectorAll('span')[1];
+      if(label) label.textContent = on ? '已收藏' : '收藏';
+      toast(on ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  document.querySelectorAll('[data-comment]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      toast('评论区已开放，欢迎留下你的核对线索');
+    });
+  });
+
+  var modalShare = document.getElementById('tlModalShare');
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(modalShare) modalShare.classList.add('is-open');
+    });
+  });
+
+  document.querySelectorAll('[data-share-to]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var to = btn.getAttribute('data-share-to');
+      closeAllModals();
+      toast('已唤起' + to + '分享面板');
+    });
+  });
+
+  var copyBtn = document.getElementById('tlCopyBtn');
+  if(copyBtn){
+    copyBtn.addEventListener('click', function(){
+      var link = 'https://laohucai-video.cn/topic/12hours-ep06';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){
+          closeAllModals();
+          toast('链接已复制，可粘贴分享');
+        }).catch(function(){
+          toast('复制失败，请手动选择链接');
+        });
+      }else{
+        toast('当前环境不支持复制，请手动分享');
+      }
+    });
+  }
+
+  /* 弹窗通用 */
+  function closeAllModals(){
+    document.querySelectorAll('.tl-modal').forEach(function(m){
+      m.classList.remove('is-open');
+    });
+  }
+  document.querySelectorAll('.tl-modal-close, [data-close]').forEach(function(btn){
+    btn.addEventListener('click', closeAllModals);
+  });
+  document.querySelectorAll('.tl-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m) closeAllModals();
+    });
+  });
+
+  var openMap = {
+    submit:'tlModalSubmit',
+    contact:'tlModalContact',
+    report:'tlModalReport'
+  };
+  document.querySelectorAll('[data-open]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = openMap[btn.getAttribute('data-open')];
+      if(id){
+        var el = document.getElementById(id);
+        if(el) el.classList.add('is-open');
+      }
+    });
+  });
+
+  /* 作者档案 */
+  var authorModal = document.getElementById('tlModalAuthor');
+  document.querySelectorAll('[data-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var parts = btn.getAttribute('data-author').split('|');
+      document.getElementById('tlAuthorName').textContent = parts[0] || '创作者';
+      document.getElementById('tlAuthorCat').textContent = parts[1] || '';
+      document.getElementById('tlAuthorDesc').textContent = parts[2] || '';
+      document.getElementById('tlAuthorWorks').textContent = parts[3] || '0';
+      document.getElementById('tlAuthorFans').textContent = parts[4] || '0';
+      document.getElementById('tlAuthorAva').textContent = (parts[0] || '创').charAt(0);
+      document.getElementById('tlFollowBtn').textContent = '关注创作者';
+      if(authorModal) authorModal.classList.add('is-open');
+    });
+  });
+
+  var followBtn = document.getElementById('tlFollowBtn');
+  if(followBtn){
+    followBtn.addEventListener('click', function(){
+      var on = followBtn.textContent === '关注创作者';
+      followBtn.textContent = on ? '已关注' : '关注创作者';
+      toast(on ? '已关注，动态更新会提醒你' : '已取消关注');
+    });
+  }
+
+  /* 表单提交 */
+  var submitForm = document.getElementById('tlSubmitForm');
+  if(submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeAllModals();
+      toast('投稿已提交，编辑会在 5 个工作日内回复');
+      submitForm.reset();
+    });
+  }
+  var reportForm = document.getElementById('tlReportForm');
+  if(reportForm){
+    reportForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeAllModals();
+      toast('反馈已收到，我们会在 48 小时内响应');
+      reportForm.reset();
+    });
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('tlTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){
+      topBtn.classList.add('is-show');
+    }else{
+      topBtn.classList.remove('is-show');
+    }
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 导航高亮 */
+  var navLinks = document.querySelectorAll('.tl-nav a');
+  navLinks.forEach(function(a){
+    a.addEventListener('click', function(){
+      navLinks.forEach(function(x){ x.classList.remove('is-active'); });
+      a.classList.add('is-active');
+    });
+  });
+
+})();
+</script>
+</body>
+  </html>
